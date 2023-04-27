@@ -1,7 +1,7 @@
 name: lint-test-deploy
 on: push
 jobs:
-  set up:
+  set-up:
     runs-on: ubuntu-latest
     steps:
       - name: Check Out
@@ -22,7 +22,7 @@ jobs:
     
   
   Deploy:
-    needs: set up
+    needs: set-up
     runs-on: ubuntu-latest
     steps:
         - name: Get code
